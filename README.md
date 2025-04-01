@@ -1,2 +1,3 @@
-# taberna-do-dragao
-Projeto de RPG com 3D&amp;T, ficha online e IA como Mestre.
+# Taberna do Dragão
+
+Projeto de RPG com 3D&T, ficha online e IA como Mestre.

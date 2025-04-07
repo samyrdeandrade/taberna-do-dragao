@@ -1,0 +1,1 @@
+export default function Aventura() { return <h1>Página da Aventura</h1>; }

@@ -1,0 +1,1 @@
+export default function Fichas() { return <h1>Página de Fichas dos Jogadores</h1>; }

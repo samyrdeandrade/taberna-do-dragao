@@ -1,0 +1,1 @@
+export default function Mestre() { return <h1>Painel do Mestre</h1>; }

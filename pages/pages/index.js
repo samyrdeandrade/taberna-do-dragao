@@ -1,22 +1,43 @@
-import Head from 'next/head';
-import Link from 'next/link';
+import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gray-900 text-white p-8">
+    <div style={{ minHeight: '100vh', background: '#111', color: '#fff', padding: '2rem' }}>
       <Head>
         <title>Taberna do Dragão</title>
       </Head>
-      <header className="mb-12">
-        <h1 className="text-4xl font-bold text-yellow-400">Taberna do Dragão</h1>
-        <p className="text-gray-300 mt-2">Escolha o que deseja fazer:</p>
-      </header>
-      <main className="space-y-6">
-        <Link href="/aventura"><a className="block p-4 bg-yellow-600 hover:bg-yellow-700 rounded shadow">📜 Ir para a Aventura</a></Link>
-        <Link href="/fichas"><a className="block p-4 bg-blue-600 hover:bg-blue-700 rounded shadow">📘 Ver Fichas</a></Link>
-        <Link href="/acoes"><a className="block p-4 bg-green-600 hover:bg-green-700 rounded shadow">🎲 Enviar Ação</a></Link>
-        <Link href="/mestre"><a className="block p-4 bg-purple-600 hover:bg-purple-700 rounded shadow">🧙 Painel do Mestre</a></Link>
-      </main>
+      <h1 style={{ fontSize: '2rem', marginBottom: '1rem', color: 'yellow' }}>Taberna do Dragão</h1>
+      <ul style={{ listStyle: 'none', padding: 0 }}>
+        <li style={{ marginBottom: '1rem' }}>
+          <Link href="/aventura">
+            <a style={{ background: 'goldenrod', padding: '0.5rem 1rem', color: '#111', textDecoration: 'none' }}>
+              📜 Ir para a Aventura
+            </a>
+          </Link>
+        </li>
+        <li style={{ marginBottom: '1rem' }}>
+          <Link href="/fichas">
+            <a style={{ background: 'teal', padding: '0.5rem 1rem', color: '#fff', textDecoration: 'none' }}>
+              📘 Ver Fichas
+            </a>
+          </Link>
+        </li>
+        <li style={{ marginBottom: '1rem' }}>
+          <Link href="/acoes">
+            <a style={{ background: 'green', padding: '0.5rem 1rem', color: '#fff', textDecoration: 'none' }}>
+              🎲 Enviar Ação
+            </a>
+          </Link>
+        </li>
+        <li style={{ marginBottom: '1rem' }}>
+          <Link href="/mestre">
+            <a style={{ background: 'purple', padding: '0.5rem 1rem', color: '#fff', textDecoration: 'none' }}>
+              🧙 Painel do Mestre
+            </a>
+          </Link>
+        </li>
+      </ul>
     </div>
-  );
+  )
 }
